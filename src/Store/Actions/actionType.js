@@ -1,6 +1,8 @@
 export const GET_TARGET = 'GET_TARGET';
 
 export const ADD_TARGET = 'ADD_TARGET';
+export const ADD_LOCALE = 'ADD_LOCALE';
+
 
 
 
