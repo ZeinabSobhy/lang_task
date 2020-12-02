@@ -3,7 +3,7 @@ import { FormattedMessage} from 'react-intl';
 import {connect} from "react-redux";
 
 
-class About extends Component {
+class Form extends Component {
     
     constructor(props) {
         super(props);
@@ -15,11 +15,11 @@ class About extends Component {
       <div>
              <p>
                         <FormattedMessage
-                            id="lblPaymentMethod"
+                            id="btnAscending"
                             values={ this.props.locale }
                         />
                         <br />
-                        <FormattedMessage id="lblAmountinAED"  />
+                        <FormattedMessage id="lblAmountinAED"/>
                     </p>
       </div>
       
@@ -35,4 +35,4 @@ const MapStateToProps = state => {
 };
 
 
-export default  connect(MapStateToProps) (About);
+export default  connect(MapStateToProps) (Form);

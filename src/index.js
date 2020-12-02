@@ -8,8 +8,6 @@ import reportWebVitals from './reportWebVitals';
 import {createStore, applyMiddleware , compose} from 'redux';
 import TargetReducer from "./Store/Reducers/TargetReducer";
 import {fetchGetTarget} from "./Store/Actions/TargetActions";
-import {Router} from 'react-router-dom';
-
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const middleware = store => {

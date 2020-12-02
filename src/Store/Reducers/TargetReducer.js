@@ -7,7 +7,7 @@ const initialState = {
         en : {},
         ar : {}
     }},
-    locale : 'en' 
+    locale : null
 }
 
 
@@ -16,7 +16,11 @@ const TargetReducer = (state = initialState , action) => {
         case GET_TARGET :
              return updateObject(state , {Target:action.payload}) ;
         case ADD_LOCALE :
-            return updateObject(state , {locale:action.payload}) ;
+            var obj = {
+                ...state , 
+            locale : action.payload.lang
+            }
+            return updateObject(state , obj) ;
         default :
             return {
                 ...state

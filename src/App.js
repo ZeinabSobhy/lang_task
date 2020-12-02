@@ -7,6 +7,7 @@ import Navbar from './Component/navbar/navbar';
 import HomeComponent from "./Component/Home/HomeComponent";
 import React from "react";
 import About from './Component/about';
+import Form from './Component/form';
 import {BrowserRouter as Router, withRouter} from 'react-router-dom';
 import {Switch , Route } from 'react-router-dom';
 import {connect} from "react-redux";
@@ -22,6 +23,7 @@ function App(props) {
     <IntlProvider locale={props.locale} messages={props.Target.Target[props.locale]}>
         <Route exact path='/' component={HomeComponent} />
         <Route  path='/About' component={About} />
+        <Route  path='/Form' component={Form} />
         </IntlProvider>
     </Switch>
     </Router> 

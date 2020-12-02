@@ -13,7 +13,9 @@ export const get_Target = (value) => {
 export const add_locale = (value) => {
     return {
         type: ADD_LOCALE ,
-        payload : value
+        payload : {
+            lang : value
+        }
     }
 }
 var phrases = {
